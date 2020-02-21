@@ -1,9 +1,4 @@
-// total in cup
-var variableOne = 0;
 
-var yourBalance = 0;
-var yourDebt = 0;
-var yourHealthStatus = 100;
 
 var typedWord;
 var word = "";
@@ -29,12 +24,11 @@ function notWord() {
     document.getElementById("error").innerHTML = error;
 }
 
-function incrementOne() {
-    variableOne++;
-    console.log("incremented VariableOne to"+variableOne+"");
-    document.getElementById("variableOneText").innerHTML = "variableOne equals:"+variableOne;
-}
-
-function payment() {
-    yourBalance = yourbalance - 1;
+function reset() {
+    typedWord = "";
+    word = "";
+    error = "";
+    document.getElementById("wordInput").value = "";
+    document.getElementById("wordText").innerHTML = word;
+    document.getElementById("error").innerHTML = error;
 }

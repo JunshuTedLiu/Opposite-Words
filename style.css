@@ -13,3 +13,12 @@ footer {
 #error {
     color: #ff0000;
 }
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul {
+    float: right;
+}
